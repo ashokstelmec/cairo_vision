@@ -1,81 +1,66 @@
 import React from "react";
+import {
+  TbCircleNumber1,
+  TbCircleNumber2,
+  TbCircleNumber3,
+} from "react-icons/tb";
 import "./Article.css";
 
 const Article = () => {
   return (
-    <div className="article">
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./Home-Stacked-768x1024_Employers-1.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
-            </div>
+    <article>
+      <div className="article">
+        <div className="how-it-works">
+          <div className="how-work">
+            <h2>How it works</h2>
+            <p>
+              Available nationwide, in-person or virtually, Papa Pals offer a
+              hand to help, a shoulder to lean on, and an ear to listen.
+            </p>
           </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-            </div>
+
+          <div className="participating-plan">
+            <h2>
+              <TbCircleNumber1 classname="circle-number" /> Sign up through your
+              participating plan.
+            </h2>
+            <p>
+              Flexible enrollment processes help members take advantage of their
+              Medicare Advantage, Medicaid, or employer-provided benefit.
+            </p>
           </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
-            </div>
+
+          <div className="participating-plan">
+            <h2>
+              <TbCircleNumber2 classname="circle-number" /> Schedule a live or
+              online visit with a Papa Pal.
+            </h2>
+            <p>
+              Health plan members can schedule appointments by phone. Employees
+              have the flexibility of using our mobile app for iPhone and
+              Android.
+            </p>
+          </div>
+
+          <div className="participating-plan">
+            <h2>
+              <TbCircleNumber3 classname="circle-number" /> Enjoy your time and
+              tell us how we did.
+            </h2>
+            <p>
+              Members and loved ones are matched with Papa Pals for
+              companionship, help with children and pets, transportation,
+              errands, and more. Post-visit surveys help us make sure it’s the
+              perfect pal every time!
+            </p>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+
+        <div className="dad-daughter">
+          <img src="./Home-HowItWorks-685x1024-1.jpg" alt="Dad-Daughter-duo" />
+        </div>
       </div>
-    </div>
+    </article>
   );
 };
 
